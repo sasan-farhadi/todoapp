@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <title>دفترچه انجام کارها</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2> لیست انجام کارها </h2>
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="یادداشت را اضافه کن...">
+            <input type="date" id="date-input">
+            <button id="add-button">اضافه </button>
+            <button id="edit-button">ویرایش </button>
+        </div>
+        <div class="todos-oprator">
+            <div>
+                <button class="filter-todos" data-filter="all"> همه </button>
+                <button class="filter-todos" data-filter="pending"> انتظار </button>
+                <button class="filter-todos" data-filter="completed"> انجام شده </button>
+            </div>
+            <button id="delete-all-button">حذف همه</button>
+        </div>
+    </div>
+
+    <div id="alert-message">
+
+    </div>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th> وظیفه </th>
+                    <th> تاریخ </th>
+                    <th> وضعیت </th>
+                    <th> عمل ها </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

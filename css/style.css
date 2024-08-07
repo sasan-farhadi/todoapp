@@ -1,0 +1,153 @@
+:root {
+    --color-primary: #f9d72f;
+    --color-background: #e6e6e6;
+    --color-success: #36d39a;
+    --color-warning: #fbbe23;
+    --color-error: #f87171;
+    --color-task: #f7f7f7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'iranyekanwebregular', Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    margin: 40px auto 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.input-section input {
+    margin: 0 0 0 10px;
+    width: 100%;
+    border: var(--color-primary) 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+}
+
+.input-section input:focus {
+    outline: none;
+    border-width: 2px;
+}
+
+button {
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.todos-oprator {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#delete-all-button {
+    background-color: var(--color-error);
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: var(--color-background);
+}
+
+thead th {
+    padding: 10px;
+}
+
+thead th:first-child {
+    border-top-right-radius: 10px;
+}
+
+thead th:last-child {
+    border-top-left-radius: 10px;
+}
+
+tbody td {
+    background-color: var(--color-task);
+    padding: 5px 10px;
+    text-align: center;
+    width: 25%;
+}
+
+tbody td button {
+    padding: 4px 8px;
+    margin: 2px 5px;
+}
+
+tbody td button:nth-child(1) {
+    background-color: var(--color-warning);
+}
+
+tbody td button:nth-child(2) {
+    background-color: var(--color-success);
+    width: 80px;
+}
+
+tbody td button:nth-child(3) {
+    background-color: var(--color-error);
+}
+
+#alert-message {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.alert {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.alert-success {
+    background-color: var(--color-success);
+}
+
+.alert-error {
+    background-color: var(--color-error);
+}
+
+#edit-button {
+    display: none;
+}
